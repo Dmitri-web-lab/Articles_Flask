@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Страница о нас
+{% endblock %}
+
+{% block body %}
+<div class="container m-top-mod">
+    <h1>Добавление статьи</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введите анонс"></textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введите основной текст"></textarea><br>
+        <input type="submit" value="Отправить" class="btn btn-success">
+    </form>
+</div>
+{% endblock %}
